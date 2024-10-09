@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stone Paper Scissor</title>
+    <style>
+        .ele{
+            height: 30px;
+            width: 100px;
+            border-radius: 2px;
+            margin-right: 10px;
+            background-color: orchid;
+            
+        }
+        .main{
+            border: 2px solid black;
+            background-color: rgb(193, 140, 193);
+            height: 200px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 90px;
+        }
+        body{
+            background-color:rgb(179, 179, 113);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="main">
+        <button class="ele"  onclick="winner('stone',computerchoice())">Stone</button>
+        <button class="ele" onclick="winner('paper',computerchoice())">Paper</button>
+        <button class="ele" onclick="winner('scissor',computerchoice())">Scissor</button>
+        </div>
+    </center>
+    <script src="stonepaper.js">
+    </script>
+</body>
+</html>
